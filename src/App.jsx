@@ -1,11 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
-import Component from "./components/Componente"
-import Propiedades from './components/Propiedades';
-import Estado from './components/Estado';
-import RenderizadoCondicional from './components/RenderizadoCondicional';
-import RenderizadoElementos from './components/RenderizadoElementos';
-
+import Component from "./components/p14_clases/Componente"
+import Propiedades from './components/p14_clases/Propiedades';
+import Estado from './components/p14_clases/Estado';
+import RenderizadoCondicional from './components/p14_clases/RenderizadoCondicional';
+import RenderizadoElementos from './components/p14_clases/RenderizadoElementos';
+import EventosBiding from './components/p14_clases/EventosBiding';
+import {Eventos_property_E6, Eventos_property_E7} from './components/p14_clases/Eventos_property';
+import Eventos_sinteticos from './components/p14_clases/Eventos_sinteticos_nativo';
+import { Padre } from './components/p14_clases/Comunicacion_componentes';
+import Ciclo_vida from './components/p14_clases/Ciclo_vida';
+import Peticiones_ajax_api from './components/p14_clases/Peticiones_ajax_api';
+import State from './components/p_h/useState';
+import EfectScroll from './components/p_h/useEfect';
+import EfectReloj from './components/p_h/efectReloj';
+import Peticones_hooks from './components/p_h/Peticones_hooks';
+import Formulario from './components/p_h/Formulario';
 
 function App() {
   return (
@@ -42,6 +52,30 @@ function App() {
           <RenderizadoCondicional />
           <hr />
           <RenderizadoElementos />
+          <hr />
+          <EventosBiding/>
+          <hr />
+          <Eventos_property_E6/>
+          <Eventos_property_E7/>
+          <hr />
+          <Eventos_sinteticos/>
+          <hr />
+          <Padre/>
+          <hr />
+          <Ciclo_vida/>
+          <hr />
+          <Peticiones_ajax_api/>
+          <hr />
+          <h2>Hooks</h2>
+          <State/>
+          <hr />
+          <EfectScroll/>
+          <hr />
+          <EfectReloj/>
+          <hr />
+          <Peticones_hooks/>
+          <hr />
+          <Formulario/>
           <hr />
         </section>
       </header>
